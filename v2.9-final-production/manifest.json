@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Garena Production Bridge Final",
+  "version": "2.9",
+  "description": "Production-grade MV3 extension with complete flow integration, keep-alive worker, and automated OTP injection.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://*.garena.com/*",
+    "https://api.mail.tm/*"
+  ]
+}
